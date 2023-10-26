@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Welcome To Quest</title>
+    <link rel="icon" href="/image/quest.png" type="image/png">
 </head>
 <body>
 <h1><%= "Hello World!" %>
 </h1>
 <br/>
-<a href="welcome">Hello Servlet</a>
 </body>
 </html>
