@@ -1,0 +1,92 @@
+.header {
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(to bottom, #1367bf, #fdfda1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+body {
+    background: url('/image/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    margin: 100px;
+}
+
+.story-box {
+    font-family: 'Pacifico', cursive;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    height: 300px;
+    max-width: 600px;
+    text-align: justify;
+    margin-top: 140px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s;
+}
+
+.story-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.start-button, .translate-button {
+    font-family: 'Pacifico', cursive;
+    background-color: transparent;
+    border: 2px solid #333;
+    padding: 10px 80px;
+    border-radius: 5px;
+    margin-top: 80px;
+    font-size: 20px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s ease;
+}
+
+.start-button:hover, .translate-button:hover {
+    backdrop-filter: blur(5px);
+    background: linear-gradient(to bottom, rgba(19, 103, 191, 0.2), rgba(253, 253, 161, 0.2));
+}
+
+.start-button:active, .translate-button:active {
+    transform: scale(0.95);
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+}
+
+.story-box:first-child {
+    opacity: 1;
+    order: 1;
+}
+
+.story-box:last-child {
+    opacity: 0;
+    order: 2;
+}
+
+
+.active .story-box:last-child {
+    opacity: 1;
+}
+
+.active .story-box:first-child {
+    opacity: 0;
+}
+
+
+
