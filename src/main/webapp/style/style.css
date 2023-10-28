@@ -52,12 +52,12 @@ body {
     transition: all 0.7s ease;
 }
 
-.start-button:hover, .translate-button:hover {
+.start-button:hover, .translate-button:hover, .submit-button:hover {
     backdrop-filter: blur(5px);
     background: linear-gradient(to bottom, rgba(19, 103, 191, 0.2), rgba(253, 253, 161, 0.2));
 }
 
-.start-button:active, .translate-button:active {
+.start-button:active, .translate-button:active, .submit-button:active {
     transform: scale(0.95);
 }
 
@@ -88,5 +88,45 @@ body {
     opacity: 0;
 }
 
+.question-box {
+    font-family: 'Pacifico', cursive;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 800px;
+    max-height: 800px;
+    text-align: justify;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.question-box p {
+    margin-bottom: 50px;
+}
 
+.game-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-box form {
+    margin-right: 600px;
+}
+
+.submit-button {
+    font-family: 'Pacifico', cursive;
+    background-color: transparent;
+    border: 2px solid #333;
+    padding: 10px 80px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
