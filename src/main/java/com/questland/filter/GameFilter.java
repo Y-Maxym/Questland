@@ -23,6 +23,7 @@ public class GameFilter implements Filter {
             Localization localization = Localization.valueOf(lang.toUpperCase());
             Player player = new Player(localization);
             HttpSession session = request.getSession();
+            session.setAttribute("lang", lang);
             session.setAttribute("player", player);
         }
 

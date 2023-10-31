@@ -9,10 +9,10 @@ function toggleTranslation() {
     }
 
     let translate = document.getElementById("translate-button");
-    if (translate.textContent === "Translate") {
-        translate.textContent = "Перекласти"
+    if (translate.textContent === "Перекласти") {
+        translate.textContent = "Translate"
     } else {
-        translate.textContent = "Translate";
+        translate.textContent = "Перекласти";
     }
 
     let start = document.getElementById("start-button");

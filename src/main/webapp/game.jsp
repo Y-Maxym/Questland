@@ -4,9 +4,10 @@
 <head>
     <title>Lost at Sea</title>
     <link rel="icon" href="image/quest.png" type="image/png">
-    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <script type="text/javascript" src="script/script.js"></script>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <c:set var="lang" value='<%=session.getAttribute("lang")%>'/>
 </head>
 <body class="game-body">
 <div class="question-box">
@@ -27,10 +28,10 @@
         <br>
         <label>
             <button type="submit" class="submit-button" onclick="nextQuestion()">
-                <c:if test="${lang == \"eng\"}">
+                <c:if test='${lang == "eng"}'>
                         Next
                 </c:if>
-                <c:if test="${lang == \"ukr\"}">
+                <c:if test='${lang == "ukr"}'>
                     Далі
                 </c:if>
             </button>

@@ -4,7 +4,7 @@
 <head>
     <title>Welcome To Quest</title>
     <link rel="icon" href="image/quest.png" type="image/png">
-    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <script type="text/javascript" src="script/script.js"></script>
 </head>
 <body>
@@ -37,7 +37,7 @@
 </div>
 
 <div class="button-container">
-    <button id="translate-button" class="translate-button" onclick="toggleTranslation()">Translate</button>
+    <button id="translate-button" class="translate-button" onclick="toggleTranslation()">Перекласти</button>
     <button id="start-button" class="start-button" onclick="redirectToStart()">Start</button>
 </div>
 <br/>
