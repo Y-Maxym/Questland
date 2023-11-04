@@ -1,6 +1,5 @@
 package com.questland.filter;
 
-import com.questland.game.Localization;
 import com.questland.game.Player;
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebFilter;
@@ -20,8 +19,7 @@ public class GameFilter implements Filter {
 
         String lang = request.getParameter("lang");
         if (StringUtils.isNotEmpty(lang)) {
-            Localization localization = Localization.valueOf(lang.toUpperCase());
-            Player player = new Player(localization);
+            Player player = new Player();
             HttpSession session = request.getSession();
             session.setAttribute("lang", lang);
             session.setAttribute("player", player);

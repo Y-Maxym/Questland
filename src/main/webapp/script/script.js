@@ -34,7 +34,3 @@ function redirectToStart() {
 
     window.location.href = startURL;
 }
-
-function nextQuestion() {
-
-}
