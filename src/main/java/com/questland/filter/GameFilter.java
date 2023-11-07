@@ -23,8 +23,9 @@ public class GameFilter implements Filter {
             HttpSession session = request.getSession();
             session.setAttribute("lang", lang);
             session.setAttribute("player", player);
-        }
 
-        request.getRequestDispatcher("/game").forward(request, response);
+            request.getRequestDispatcher("/game").forward(request, response);
+        }
+        filterChain.doFilter(request, response);
     }
 }

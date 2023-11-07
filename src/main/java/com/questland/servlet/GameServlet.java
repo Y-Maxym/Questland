@@ -34,6 +34,6 @@ public class GameServlet extends HttpServlet {
         session.setAttribute("question", question);
         session.setAttribute("nextQuestions", nextQuestions);
 
-        request.getRequestDispatcher("/game.jsp").forward(request, response);
+        request.getRequestDispatcher("game.jsp").forward(request, response);
     }
 }
