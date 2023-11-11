@@ -10,7 +10,7 @@
 <body>
 <div>
     <h1 id="header" class="header">
-        Lost at Sea: Escape from the Island of Mysteries
+        Island of Secrets
     </h1>
 </div>
 <div class="story-container">

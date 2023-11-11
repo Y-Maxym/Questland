@@ -2,10 +2,10 @@ function toggleTranslation() {
     document.querySelector('.story-container').classList.toggle('active');
 
     let header = document.getElementById("header");
-    if (header.innerText === "Lost at Sea: Escape from the Island of Mysteries") {
-        header.innerText = "Загублений в морі: Втеча з острова таємниць"
+    if (header.innerText === "Island of Secrets") {
+        header.innerText = "Острів Таємниць"
     } else {
-        header.innerText = "Lost at Sea: Escape from the Island of Mysteries";
+        header.innerText = "Island of Secrets";
     }
 
     let translate = document.getElementById("translate-button");
@@ -33,4 +33,8 @@ function redirectToStart() {
     }
 
     window.location.href = startURL;
+}
+
+function redirectToWelcome() {
+    window.location.href = '/';
 }

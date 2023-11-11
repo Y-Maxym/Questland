@@ -59,5 +59,18 @@
         </form>
     </c:if>
 </div>
+<c:if test='${nextQuestions.isEmpty()}'>
+    <div class="restart-container">
+        <button onclick="redirectToWelcome()">
+            <c:if test='${lang == "eng"}'>
+                Restart
+            </c:if>
+            <c:if test='${lang == "ukr"}'>
+                Почати заново
+            </c:if>
+        </button>
+    </div>
+</c:if>
+
 </body>
 </html>

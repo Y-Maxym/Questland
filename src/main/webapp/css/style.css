@@ -130,3 +130,31 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.restart-container {
+    width: 800px;
+    height: 100px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.restart-container button {
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+    position: absolute;
+    right: 60px;
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #333333;
+    border-radius: 10px;
+}
+
+.restart-container button:hover {
+    backdrop-filter: blur(5px);
+    background: linear-gradient(to bottom, rgba(19, 103, 191, 0.2), rgba(253, 253, 161, 0.2));
+}
+
+.restart-container button:active {
+    transform: scale(0.95);
+}
